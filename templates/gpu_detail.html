@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ gpu.name }} Details</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+        .centered-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gpu-details {
+            width: 500px;
+            padding: 20px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+          <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+          <a href="/blog" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Project Blog</a>
+          <a href="" class="w3-bar-item w3-button w3-padding-large w3-white">Parts Search</a>
+          <a href="/timeline" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Project Timeline/Narrative</a>
+          <a href="/works" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Works Cited</a>
+        </div>
+      
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+          <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+        </div>
+    </div>
+    <hr>
+    <div class="centered-container">
+        <div class="gpu-details">
+            <h1>{{ gpu.name }}</h1>
+            <p>Year Released: {{ gpu.yearReleased }}</p>
+            <p>Price: ${{ gpu.price }}</p>
+            <p>Average FPS: {{ gpu.average_fps }}</p>
+            <p>Average Temperature: {{ gpu.avgTemp }}</p>
+            <p>GPU Clock: {{ gpu.gpuClock }}</p>
+            <p>Memory: {{ gpu.memory }} GB</p>
+            <p>Description: {{ gpu.itemDescription }}</p>
+            <p><img src="{{ gpu.image.url }}" alt="{{ gpu.name }} image"></p>
+        </div>
+    </div>
+</body>
+</html>

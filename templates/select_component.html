@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Component Type</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+        .fa-anchor,.fa-coffee,.fa-search,.fa-male {font-size:200px}
+        .centered-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        .search-icon {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%; /* Full width to match the form width */
+        }
+        .search-icon input {
+            padding-left: 40px; /* Increase padding to accommodate larger icon */
+            font-size: 3em; /* Increase font size */
+            width: 100%; /* Full width to match the form width */
+        }
+        .search-icon i {
+            position: absolute;
+            left: 10px;
+            color: red;
+            font-size: 3em; /* Increase icon size */
+        }
+        .custom-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.5em; /* Increase font size */
+        }
+        .w3-container {
+            width: 500px; /* Increase the width of the container */
+            padding: 20px; /* Add padding inside the container */
+        }
+        h1 {
+            font-size: 5em; /* Increase font size of the heading */
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+          <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+          <a href="/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+          <a href="/blog" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Project Blog</a>
+          <a href="" class="w3-bar-item w3-button w3-padding-large w3-white">Parts Search</a>
+          <a href="/timeline" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Project Timeline/Narrative</a>
+          <a href="/works" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Works Cited</a>
+        </div>
+      
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+          <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+          <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+        </div>
+      </div>
+      <hr>
+    <div class="centered-container">
+        <h1 class="w3-text-red">Select Component Type</h1>
+        <form method="post" class="w3-container w3-card-4 w3-light-grey w3-text-red w3-margin">
+            {% csrf_token %}
+            <div class="w3-row w3-section search-icon">
+                <i class="w3-large w3-text-red fa fa-search"></i>
+                {{ form.as_p }}
+            </div>
+            <button type="submit" class="w3-button w3-red custom-button">Next</button>
+        </form>
+    </div>
+    <!-- Make sure to include the FontAwesome library for the search icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

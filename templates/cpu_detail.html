@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ cpu.name }} Details</title>
+</head>
+<body>
+    <h1>{{ cpu.name }}</h1>
+    <p>Year Released: {{ cpu.yearReleased }}</p>
+    <p>Price: ${{ cpu.price }}</p>
+    <p>Cores: {{ cpu.cores }}</p>
+    <p>Threads: {{ cpu.threads }}</p>
+    <p>Average Temperature: {{ cpu.avgTemp }}</p>
+    <p>Socket: {{ cpu.socket }}</p>
+    <p>Description: {{ cpu.itemDescription }}</p>
+    <p><img src="{{ cpu.image.url }}" alt="{{ cpu.name }} image"></p>
+</body>
+</html>

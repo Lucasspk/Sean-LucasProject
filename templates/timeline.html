@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee,.fa-search,.fa-male,.fa-bars,.glyphicon-file {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a href="blog" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Project Blog</a>
+    <a href="select-component" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Parts Search</a>
+    <a href="timeline" class="w3-bar-item w3-button w3-padding-large w3-white">Project Timeline/Narrative</a>
+    <a href="works" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Works Cited</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+<!-- Header -->
+
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Project Timeline</h1>
+      <h5 class="w3-padding-32">May 20th - Friday, June 14th:
+      </h5>
+
+      <p class="w3-text-grey">Week 1: Complete a 25 hour online course for basic Python and its application for general web development. Assuming this course will take less time (expected 15-20ish hours) due to our prior experiences with coding, we use any spare time to begin research outlined in week 2. <br> 
+
+
+        Week 2: Develop a repository of computer hardware for the current generation of PC hardware (DDR5, Ryzen 7XXX series, Intel 14th Gen, AM5/LGA 1700 motherboards, etc.). With the sheer amount of parts available on the market, it would take at least a day’s worth of work (5 hours) to compile through reviews for each type of component (PSUs, GPUs, CPUs, Motherboards, Cases, RAM, Storage, etc.). This task will most certainly bleed into the third week’s time. For each part that we place on a recommendation list, there will be an adequate explanation regarding why we believe that part is currently a good deal. <br>
+        
+        
+        Week 3: Create a short google form to send out to our peers in order to get a good sense for what most consumers are looking for when selecting the ideal hardware component for themselves. Evaluate market price and examine the relationship between computer hardware and availability to give the best advice to consumers. We believe that a good portion of Week 2’s research will be accomplished here. <br>
+        
+        
+        Week 4: A compiling of all learned information into our “how to” website. Time will also be spent on website design to make the website easy to traverse and use for non-computer experts. The finished website should be visually and functionally comparable to modern websites. We plan on having a personalized ranking list for each consumer by allowing them to filter based on budget or brand, weighting between gaming and productivity performance, and whatever other parameters we collected from the survey of our peers. We will certainly need to create some type of math based function or algorithm in order to maximize user’s individual experiences with their personalized rankings. Each item on the list will have shortcuts or links to a full explanation about its pros and cons. Additionally, we plan on having pages dedicated to the economic details of the hardware market and current events. Most likely filled with econ graphs we have learned about over the course of our year and applying them to this specific industry. And finally, we plan on focusing on the fundamental differences between parts by explaining the engineering differences between them. Sean will focus on the mechanical designs (Heatsinks, cooling fans, etc.) while Lucas will prioritize computer architecture (circuits, VLSI chips, etc.). These findings will be put in another page of the website. And finally a step-by-step tutorial in identifying common scams in various computer marketplaces will be created either in video or text. After the project enters this final phase, we will consult with our teachers in econ, comp sci, and physics to confirm if the applications of our learning are correct. 
+        </p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <i class="fa fa-bars w3-padding-64 w3-text-red"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="glyphicon glyphicon-file w3-padding-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>Narrative</h1>
+      <h5 class="w3-padding-32">We plan to create the most in-depth “how to” website for consumers looking to buy computer parts so they will not feel the need to compare between dozens of sources as we would have already filtered out unreputable industry voices such as Intel’s marketing team or Userbenchmark.com. Since we already know how to develop websites in languages like Java, Javascript, CSS, HTML, etc., we plan on challenging ourselves by learning a language that neither of us is familiar with: Python. Not only is Python widely recognized as one of the best coding languages for web development but is one of the most versatile languages as well and is used widely across the discipline of engineering which both of us are prospective students for. So this would not only be an informative project available to the greater world, but we will also be able to hone an important skill for our futures in college and the workplace.</h5>
+
+      <p class="w3-text-grey">The website will be coded in Python entirely from the ground up and we will avoid using premade website templates to facilitate the programming process. We plan on learning Python and its application in web development through a 25 hour online course. <br>
+
+
+        After the initial stage of learning Python, we will move into the next phase of our plan and conduct the majority of our research. First, in order to get a good sense of what consumers are looking for in computer parts, we will create a short survey that will be distributed among our peers in order to collect these common values. Then, the strenuous process of sifting through countless reputable videos and articles surrounding each current generation component will begin. Since we already have a good sense of the best deals in the US market, we won’t have to cover every available part and we can eliminate obvious negative outliers from our analysis (RTX 3050). This will certainly be the most time consuming part of the project and could easily take additional time out of our second week in order to complete. <br>
+        
+        
+        The website itself will be coded in a collaborative programming website such as Replit which is currently used by GHS’s computer science teachers. However its RAM limitations may force us to move to more powerful coding programs. Since we are both relatively experienced in website development using other languages, this should leave us time to research the ongoing problems in the hardware industry and why prices have seemed so high in recent years. We will incorporate our findings and write detailed explanations using the economics topics we have learned throughout the year, and we will visually explain the current situation as well using graphs. The remaining research will be surrounding the actual architecture of each part. Sean will focus on mechanical design such as cooling technology while Lucas will focus on microchip design, and circuit architecture. These topics will be used to explain why a higher spec number such as power draw or CUDA core count may not lead to the greater yields in performance which big tech companies have advertised. Then we plan on fact checking the application of our work through our teachers in these subject matters before attempting to make the website publicly available. <br>
+        
+        
+        Justification for partnership: The project that we intend to embark on is very ambitious. It requires that we learn an entirely new language of code, research extensively about hundreds of different computer components, as well as compile all of our findings into a website. Alone, it would simply be impossible to accomplish the research portion of the project in a reasonable time to allocate space for learning Python and designing a website. Additionally, we are very interested and engaged in the topics that the project is about. Classes like our shared AD Calc class or AP Physics C class have many connections to the project topic and our shared interest for these classes that will engage us in this project.
+        
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Not every button works at the moment since URL routing is incomplete</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ motherboard.name }} Details</title>
+</head>
+<body>
+    <h1>{{ motherboard.name }}</h1>
+    <p>Year Released: {{ motherboard.yearReleased }}</p>
+    <p>Price: ${{ motherboard.price }}</p>
+    <p>Form Factor: {{ motherboard.formFactor }}</p>
+    <p>Description: {{ motherboard.itemDescription }}</p>
+    <p><img src="{{ motherboard.image.url }}" alt="{{ motherboard.name }} image"></p>
+</body>
+</html>

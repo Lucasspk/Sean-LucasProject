@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ psu.name }} Details</title>
+</head>
+<body>
+    <h1>{{ psu.name }}</h1>
+    <p>Year Released: {{ psu.yearReleased }}</p>
+    <p>Price: ${{ psu.price }}</p>
+    <p>Watts: {{ psu.watts }}</p>
+    <p>Modular: {{ psu.modular }}</p>
+    <p>Rating: {{ psu.rating }}</p>
+    <p>Rank: {{ psu.psRank }}</p>
+    <p>Description: {{ psu.itemDescription }}</p>
+    <p><img src="{{ psu.image.url }}" alt="{{ psu.name }} image"></p>
+</body>
+</html>
